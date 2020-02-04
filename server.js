@@ -7,9 +7,11 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+const url = process.env.MONGOLAB_URI
+
 //initializing db
 mongoose.connect(
-    'mongodb://localhost:27017/traffic',
+    url,
     {useNewUrlParser: true})
 
 requireDir('./src/models')
