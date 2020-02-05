@@ -5,6 +5,7 @@ const TrafficController = require('./controllers/TrafficController')
 
 //last car left
 routes.get('/lastEvent', TrafficController.lastEvent)
+
 //next car arrive
 routes.get('/nextEvent', TrafficController.nextEvent)
 
