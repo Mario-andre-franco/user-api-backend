@@ -10,6 +10,6 @@ routes.get('/lastEvent', TrafficController.lastEvent)
 routes.get('/nextEvent', TrafficController.nextEvent)
 
 //test for post infos
-routes.post('/nextCar', TrafficController.nextCar)
+routes.post('/nextCarArrive', TrafficController.nextCar)
 
 module.exports = routes
