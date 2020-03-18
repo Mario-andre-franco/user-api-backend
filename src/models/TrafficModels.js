@@ -1,4 +1,5 @@
 const moongose = require('mongoose')
+const mongoosePaginate = require('mongoose-paginate')
 
 //schema
 
@@ -17,4 +18,5 @@ const TrafficSchema = new moongose.Schema({
     },
 })
 
+TrafficSchema.plugin(mongoosePaginate)
 moongose.model("Traffic", TrafficSchema)
